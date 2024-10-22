@@ -1,0 +1,5 @@
+Hacer y subir video de friendnet a cloudinary
+
+Agregar/mejorar responsive a toda la app
+
+Terminar con todos los cambios y subir el ultimo cambio a produccion

@@ -1,0 +1,13 @@
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--tiny-font-size);
+}
+.header-container__text{
+    left : -100vw;
+}
+
+
+
+

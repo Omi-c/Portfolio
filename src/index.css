@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@100;400&family=Sacramento&display=swap');@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@100;400&family=Sacramento&display=swap');
+
+*{
+  color : #fff;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: monospace;
+}
+
+#root{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  --side-back-color : rgb(8, 35, 38);
+  --back-color : #28031f;
+  --base-color : #ff00a2;
+  --base-animation-timer : 3s;
+  --secondary-animation-timer : 1s;
+  --big-font-size : 50px;
+  --normal-font-size : 22px;
+  --tiny-font-size : 15px;
+  --base-shadow : 1px 1px 5px var(--base-color);
+  max-height: 100vh;
+}
+
+
+.main-container *{
+  width: 100vw;
+  height: 100vh;
+}
+
+#activated-title{
+  left: 0     ;
+  top : 0     ;
+  opacity: 1  ;
+}
+
+#activated-subtitle{
+  font-size: inherit;
+  margin-left : 1rem               ;
+  color : var(--base-color)        ;
+  text-shadow : var(--base-shadow) ;
+  opacity : 1                      ;
+  left : 0vw                       ;
+}
+
+.title{
+  letter-spacing: -2px;
+  height: auto;
+  width: auto;
+  position: relative;
+  font-size: var(--big-font-size);
+  text-align: center;
+  opacity: 0;
+  left : -50vw;
+  transition: 
+  opacity var(--base-animation-timer), 
+  left var(--secondary-animation-timer),
+  top var(--secondary-animation-timer);
+}
+
+.title__selected-text{
+  font-family: inherit;
+  font-size: inherit;
+  opacity: 0;
+  margin : 0;
+  transition: 
+  margin      var(--secondary-animation-timer), 
+  text-shadow var(--secondary-animation-timer), 
+  opacity     var(--secondary-animation-timer), 
+  color       var(--secondary-animation-timer);
+}
+
+
+
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  height: 100vh;
+  position: relative;
+  left: 0vw;
+  transition: left var(--secondary-animation-timer);
+  background: linear-gradient(to right, var(--side-back-color) , var(--back-color) 30%, var(--side-back-color) );
+}
+
+@media (max-width : 1100px){
+  #root{
+    --big-font-size : 40px;
+    --normal-font-size : 18px;
+    --tiny-font-size : 15px;
+  }
+}
+
+@media (max-width : 700px) {
+  #root{
+    --big-font-size : 30px;
+    --normal-font-size : 14px;
+    --tiny-font-size : 12px;
+  }
+
+}
+
+@media (max-width : 400px) {
+  #root{
+    --big-font-size : 20px;
+    --normal-font-size : 12px;
+    --tiny-font-size : 9px;
+  }
+}
+
+@media (max-width : 300px) {
+  #root{
+    --big-font-size : 13px;
+    --normal-font-size : 9px;
+    --tiny-font-size : 7px;
+  }
+}
+
+@media (max-width : 200px){
+    .about-container__title, .tecnos-container__title, .projects-container__title{
+        display: none !important;
+    }
+}

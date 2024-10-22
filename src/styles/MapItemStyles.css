@@ -1,0 +1,35 @@
+
+.map-item{
+    --animation-timing : .2s;
+    cursor: pointer;
+    font-size: var(--normal-font-size);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition-property: box-shadow;
+    transition-duration: var(--animation-timing);
+}
+
+.map-item__SELECTED{
+    box-shadow: 0 0 0 2px var(--base-color) !important;
+}
+.map-item:hover{
+    box-shadow: 0 0 0 2px #414141;
+}
+
+
+@media (max-width : 700px) {
+    .map-item{
+        padding: 10px;
+    }
+}
+
+@media (max-width : 400px) {
+    .map-item{
+        padding: 5px;
+        border-radius : 5px;
+    }
+}
+
+
+

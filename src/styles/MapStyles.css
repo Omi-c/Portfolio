@@ -1,0 +1,30 @@
+.map-bigger-container{
+    width: 100vw;
+    position: fixed;
+    top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.map-container{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    filter: blur(3px);
+    gap : 20px;
+    transition: filter var(--base-animation-timer);
+}
+
+.map-container__ACTIVATED{
+    filter: blur(0px);
+}
+
+
+@media (max-width : 700px) {
+
+    .map-container{
+        gap : 10px;
+    }
+}
