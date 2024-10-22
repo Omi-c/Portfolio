@@ -9,7 +9,7 @@ export function MapItem({name, pageId}){
         setPageNumber(pageId)
     }
     return (
-        <div  className={pageNumber == pageId? "map-item map-item__SELECTED" : "map-item"}onClick={handleClick}>      
+        <div className={pageNumber === pageId ? "map-item map-item__SELECTED" : "map-item"} onClick={handleClick}>      
             {name}
         </div>
     )
