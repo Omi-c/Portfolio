@@ -32,7 +32,7 @@ export function About(props){
     <section className="about-container">
         <h2 className="about-container__title title">About<span className="about-container__title__comp title__selected-text">Me</span></h2>
         <p className="about-container__paraph" ref={aboutContainerRef}>
-            My name is Omaris Carreño, I'm {age} years old. I graduated with a degree in Computer Engineering from José Antonio Páez University in Carabobo, Venezuela.
+            My name is Omaris Carreño, I'm {age} years old. I have a degree in Computer Engineering from José Antonio Páez University in Carabobo, Venezuela.
             I specialize in frontend web development and design. I consider myself a creative, organized, and responsible person.
         </p>
     </section>
